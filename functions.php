@@ -13,7 +13,7 @@ if (!function_exists('vv_basic_setup')) {
 add_action('after_setup_theme', 'vv_basic_setup');
 
 function vv_basic_enqueue_scripts() {
-  wp_enqueue_style('style', get_stylesheet_uri(), array(), '0.0.1');
+  wp_enqueue_style('style', get_stylesheet_uri(), array(), '0.0.2');
 }
 
 add_action('wp_enqueue_scripts', 'vv_basic_enqueue_scripts');

@@ -17,8 +17,24 @@ main {
 }
 
 .side {
-    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px 20px;
     width: 25%;
+}
+
+.contact {
+    margin-top: auto;
+    text-align: center;
+}
+
+.contact a {
+  color: #000;
+}
+
+.links {
+    display: flex;
+    justify-content: space-around;
 }
 
 .images {
@@ -31,4 +47,36 @@ main {
 .item_link {
     background-position: top center;
     height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.item_details {
+    background: rgba(50, 50, 50, 0.7);
+    box-sizing: border-box;
+    color: #fff;
+    position: absolute;
+    padding: 10px;
+    transition: all 400ms cubic-bezier(.47,1.64,.41,.8);
+    width: 100%;
+}
+
+.show-from-bottom .item_details {
+    bottom: -100%;
+    left: 0;
+}
+
+.show-from-left .item_details {
+    bottom: 0;
+    left: -100%;
+}
+
+.show-from-right .item_details {
+    bottom: 0;
+    left: 100%;
+}
+
+.item_link:hover .item_details {
+    bottom: 0;
+    left: 0;
 }
