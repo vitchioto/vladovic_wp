@@ -14,3 +14,14 @@
 	<?php wp_head(); ?>
 </head>
 <body>
+	<header class="header">
+		<a href="#" class="logo">
+			VLADOVIC.SK
+		</a>
+		<div class="email">
+			vladovic.vladimir@gmail.com
+		</div>
+		<button class="button button--primary">
+			Contact me
+		</button>
+	</header>
