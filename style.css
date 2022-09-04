@@ -377,6 +377,7 @@ body {
     background: #2B3036;
     color: #6d7a8a;
     font-family: inter;
+    font-size: 13px;
     margin: 0;
 }
 
@@ -399,7 +400,6 @@ body {
 
 .email {
     color: #5d7087;
-    font-size: 13px;
     margin-right: 24px;
 }
 
@@ -408,7 +408,6 @@ body {
     border-radius: 4px;
     cursor: pointer;
     font-family: inter;
-    font-size: 13px;
     font-weight: 700;
     line-height: 16px;
     padding: 12px 24px;
@@ -425,4 +424,20 @@ body {
 
 .button--primary:active {
     background: #29448b;
+}
+
+.footer {
+    background: #272C32;
+}
+
+.footer__content {
+    align-items: center;
+    display: flex;
+    margin: 0 auto;
+    max-width: 1080px;
+    padding: 32px 0;
+}
+
+.copyright {
+    margin-left: auto;
 }
