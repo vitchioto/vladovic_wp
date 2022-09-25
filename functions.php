@@ -47,9 +47,9 @@ function vv_latest_projects_shortcode($atts) {
       if ( $tags ) {
         $result .= "<div class='project-tags'>";
         foreach ( $tags as $tag ) :
-          $result .= "<span class='project-tag'>";
+          $result .= "<div class='project-tag'>";
           $result .= $tag->name;
-          $result .= "</span>";
+          $result .= "</div>";
         endforeach;
         $result .= "</div>";
       }
