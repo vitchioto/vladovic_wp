@@ -358,6 +358,10 @@ template {
   display: none;
 }
 
+/**
+ * Page specific styles
+ */
+
 @font-face {
   font-family: inter;
   src: url(fonts/inter/Inter-Regular.ttf);
@@ -379,6 +383,12 @@ body {
     font-family: inter;
     font-size: 13px;
     margin: 0;
+}
+
+main {
+  margin: 0 auto;
+  max-width: 1080px;
+  padding: 0 20px;
 }
 
 h1 {
@@ -413,7 +423,7 @@ h2 {
     text-decoration: none;
 }
 
-img {
+.avatar img {
   display: block;
   margin: 0 auto;
 }
@@ -461,3 +471,44 @@ img {
 .copyright {
     margin-left: auto;
 }
+
+.projects {
+  margin-bottom: 60px;
+}
+
+@media only screen and (min-width: 992px) {
+  .projects {
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.project {
+  background: #30363d;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding: 20px 20px 0;
+  text-decoration: none;
+}
+
+.project-title {
+  color: #6d7a8a;
+  font-size: 16px;
+}
+
+.project-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+
+.project-tag {
+  color: #fff;
+  font-size: 10px;
+  padding-right: 10px;
+}
+

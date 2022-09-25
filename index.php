@@ -1,5 +1,3 @@
 <?php get_header(); ?>
-<main>
-  <?php the_content(); ?>
-</main>
+<?php the_content(); ?>
 <?php get_footer(); ?>

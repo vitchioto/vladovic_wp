@@ -23,4 +23,49 @@ function vv_register_my_menu() {
 }
 
 add_action( 'init', 'vv_register_my_menu' );
+
+function vv_latest_projects_shortcode($atts) { 
+	$atts = array_change_key_case( (array) $atts, CASE_LOWER );
+
+	$args = array(
+		'numberposts' => 6,
+		'post_type' => 'project',
+	);
+
+	$projects = get_posts( $args );
+
+	if ( $projects ) {
+		$result = "<div class='projects'>";
+		foreach ( $projects as $post ) :
+      $tags = get_the_tags($post->ID);
+
+			$result .= "<a class='project' href='".get_the_permalink($post->ID)."'>";
+      $result .= "<div class='project-info'>";
+      $result .= "<div class='project-title'>";
+      $result .= get_the_title($post->ID);
+      $result .= "</div>";
+      if ( $tags ) {
+        $result .= "<div class='project-tags'>";
+        foreach ( $tags as $tag ) :
+          $result .= "<span class='project-tag'>";
+          $result .= $tag->name;
+          $result .= "</span>";
+        endforeach;
+        $result .= "</div>";
+      }
+      $result .= "</div>";
+      $result .= "<img src='".get_the_post_thumbnail_url($post->ID)."' height='150' width='150'>";
+      $result .= "</a>";
+		endforeach;
+		$result .= "</div>";
+	}
+	
+	// Output needs to be return
+	return $result;
+}
+
+function vv_shortcodes_init() {
+  add_shortcode('vv_latest_projects', 'vv_latest_projects_shortcode');
+}
+add_action( 'init', 'vv_shortcodes_init' );
 ?>
