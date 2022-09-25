@@ -388,7 +388,7 @@ body {
 main {
   margin: 0 auto;
   max-width: 1080px;
-  padding: 0 20px;
+  padding: 0 24px;
 }
 
 h1 {
@@ -410,9 +410,15 @@ h2 {
     align-items: center;
     border-bottom: 1px solid #353d45;
     display: flex;
-    margin: 0 auto;
+    margin: 0 auto 36px;
     max-width: 1080px;
+    padding: 24px 24px;
+}
+
+@media only screen and (min-width: 992px) {
+  .header {
     padding: 24px 0;
+  }
 }
 
 .logo {
@@ -456,6 +462,12 @@ h2 {
     background: #29448b;
 }
 
+.wp-block-buttons .resume {
+  display: block;
+  margin-bottom: 48px;
+  text-align: center;
+}
+
 .footer {
     background: #272C32;
 }
@@ -464,8 +476,8 @@ h2 {
     align-items: center;
     display: flex;
     margin: 0 auto;
-    max-width: 1080px;
-    padding: 32px 0;
+    max-width: 1120px;
+    padding: 32px 24px;
 }
 
 .copyright {
@@ -490,7 +502,7 @@ h2 {
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
-  padding: 20px 20px 0;
+  padding: 24px 24px 0;
   text-decoration: none;
 }
 
@@ -503,12 +515,12 @@ h2 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding-bottom: 20px;
+  padding-bottom: 24px;
 }
 
 .project-tag {
   color: #fff;
   font-size: 10px;
-  padding-right: 10px;
+  padding-right: 12px;
 }
 
