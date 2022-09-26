@@ -410,12 +410,13 @@ h2 {
     align-items: center;
     border-bottom: 1px solid #353d45;
     display: flex;
+    flex-wrap: wrap;
     margin: 0 auto 36px;
     max-width: 1080px;
     padding: 24px 24px;
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1080px) {
   .header {
     padding: 24px 0;
   }
@@ -436,7 +437,12 @@ h2 {
 
 .email {
     color: #5d7087;
+}
+
+@media only screen and (min-width: 576px) {
+  .email {
     margin-right: 24px;
+  }
 }
 
 .button {
@@ -452,6 +458,16 @@ h2 {
 .button--primary {
     background: #4878f8;
     color: #fff;
+}
+
+.button--contact {
+  margin: 16px auto 0;
+}
+
+@media only screen and (min-width: 576px) {
+  .button--contact {
+    margin: 0;
+  }
 }
 
 .button--primary:hover {
@@ -486,6 +502,14 @@ h2 {
 
 .projects {
   margin-bottom: 60px;
+}
+
+@media only screen and (min-width: 576px) {
+  .projects {
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 @media only screen and (min-width: 992px) {

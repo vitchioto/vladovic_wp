@@ -21,7 +21,7 @@
 		<div class="email">
 			vladovic.vladimir@gmail.com
 		</div>
-		<button class="button button--primary">
+		<button class="button button--primary button--contact">
 			Contact me
 		</button>
 	</header>
