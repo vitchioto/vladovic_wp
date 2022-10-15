@@ -15,7 +15,7 @@
 </head>
 <body>
 	<header class="header">
-		<a href="#" class="logo">
+		<a href="<?php echo home_url(); ?>" class="logo">
 			VLADOVIC.SK
 		</a>
 		<div class="email">
