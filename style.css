@@ -484,6 +484,23 @@ h2 {
   text-align: center;
 }
 
+.wp-block-button__link {
+  background: #30363d;
+  border-radius: 4px;
+  color: #78b5ff;
+  padding: 13px 24px;
+}
+
+.wp-block-button__link:hover {
+  background: #3a424b;
+  color: #78b5ff;
+}
+
+.wp-block-button__link:active {
+  background: #404851;
+  color: #78b5ff;
+}
+
 .footer {
     background: #272C32;
 }
