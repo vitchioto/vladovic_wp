@@ -510,8 +510,33 @@ h2 {
     align-items: center;
     display: flex;
     margin: 0 auto;
-    max-width: 1120px;
+    max-width: 1080px;
     padding: 32px 24px;
+}
+
+.footer__links {
+  display: flex;
+}
+
+.footer__link {
+  color: #78b5ff;
+  display: flex;
+  padding: 10px 0;
+  text-decoration: none;
+}
+
+.footer__link:not(:last-child)::after {
+  background: #5d7087;
+  border-radius: 50%;
+  content: "";
+  display: inline-block;
+  height: 5px;
+  margin: 5px;
+  width: 5px;
+}
+
+.footer__link:hover {
+  text-decoration: underline;
 }
 
 .copyright {
