@@ -21,6 +21,14 @@
         >
           Github
         </a>
+        <a
+          href="https://www.hackerrank.com/vladovic_vladim1"
+          class="footer__link"
+          rel="noreferrer" 
+          target="_blank"
+        >
+          HackerRank
+        </a>
       </div>
       <div class="copyright">
         Ⓒ Vladimir Vladovic 2022
