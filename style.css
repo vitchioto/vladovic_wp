@@ -454,6 +454,7 @@ h2 {
     font-weight: 700;
     line-height: 16px;
     padding: 12px 24px;
+    transition: background .3s, color .3s;
 }
 
 .button--primary {
@@ -625,11 +626,13 @@ input[type="text"], input[type="email"] {
   margin-bottom: 20px;
   padding: 24px 24px 0;
   text-decoration: none;
+  transition: background .3s;
 }
 
 .project-title {
   color: #6d7a8a;
   font-size: 16px;
+  transition: color .3s;
 }
 
 .project-info {
@@ -651,3 +654,10 @@ input[type="text"], input[type="email"] {
   padding-right: 12px;
 }
 
+.project:hover {
+  background: #373d45;
+}
+
+.project:hover .project-title {
+  color: #fff;
+}
