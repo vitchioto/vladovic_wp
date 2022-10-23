@@ -1,4 +1,7 @@
   </main>
+  <section class="modal hide">
+    <?php echo do_shortcode( '[contact-form-7 id="42" title="Kontaktný formulár 1"]' ); ?>
+  </section>
   <footer class="footer">
     <section class="footer__content">
       <div class="footer__links">
@@ -24,5 +27,6 @@
       </div>
     </section>
   </footer>
+  <?php wp_footer(); ?>
   </body>
 </html>
