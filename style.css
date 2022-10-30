@@ -392,7 +392,7 @@ body {
 }
 
 main {
-  margin: 0 auto;
+  margin: 0 auto 40px;
   max-width: 1080px;
   padding: 0 24px;
 }
@@ -723,5 +723,37 @@ input[type="text"], input[type="email"] {
 }
 
 .project:hover .project-title {
+  color: #fff;
+}
+
+.project-page p {
+  line-height: 21px;
+  margin: 0 auto;
+  max-width: 800px;
+  text-align: justify;
+}
+
+.project-intro {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.project-page .wp-block-image {
+  text-align: center;
+}
+
+.project-page img {
+  height: auto;
+  max-width: 100%;
+}
+
+.project-column {
+  font-size: 10px;
+  line-height: 16px;
+}
+
+.project-column__item {
   color: #fff;
 }
