@@ -596,6 +596,31 @@ input[type="text"], input[type="email"] {
   vertical-align: top;
 }
 
+.modal-close {
+  align-items: center;
+  background: none;
+  border: 0;
+  cursor: pointer;
+  position: relative;
+}
+
+.modal-close::before, .modal-close::after {
+  background: currentColor;
+  content: "";
+  display: block;
+  height: 15px;
+  position: absolute;
+  width: 1px;
+}
+
+.modal-close::before {
+  transform: rotate(45deg);
+}
+
+.modal-close::after {
+  transform: rotate(-45deg);
+}
+
 .footer {
     background: #272C32;
 }
