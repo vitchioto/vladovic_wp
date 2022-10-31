@@ -753,10 +753,19 @@ input[type="text"], input[type="email"] {
 }
 
 .project-column {
+  flex: 1 1 0;
   font-size: 10px;
   line-height: 16px;
 }
 
 .project-column__item {
   color: #fff;
+}
+
+.project-column:nth-child(2) {
+  text-align: center;
+}
+
+.project-column:last-child {
+  text-align: right;
 }

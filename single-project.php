@@ -1,7 +1,8 @@
 <?php
   $tags = get_the_tags();
   $tags = array_reverse($tags);
-  $year = get_field("rok");
+  $year = get_field("year");
+  $url = get_field("url");
 ?>
 
 <?php get_header(); ?>
@@ -15,7 +16,13 @@
         <?php echo $tag->name; ?>
         </span>
       <?php endforeach; ?>
-      </div>
+    </div>
+    <?php if (isset($url) && $url != "") { ?>
+    <div class="project-column">
+      <div class="project-column__title">URL</div>
+      <a href="<?php echo $url;?>" class='project-column__item'><?php echo $url;?></a>
+    </div>
+    <?php } ?>
     <div class="project-column">
       <div class="project-column__title">YEAR</div>
       <div class='project-column__item'><?php echo $year;?></div>
