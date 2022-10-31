@@ -11,6 +11,7 @@
 	<meta name="author" content="vitchi">
 	<meta name="msapplication-TileColor" content="#000">
 	<meta name="theme-color" content="#000">
+	<link rel="icon" type="image/png" sizes="64x64" href="<?php echo get_template_directory_uri().'/favicon.png'; ?>">
 	<?php wp_head(); ?>
 </head>
 <body>
