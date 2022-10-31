@@ -28,7 +28,6 @@
       <div class='project-column__item'><?php echo $year;?></div>
     </div>
   </section>
-  <div class="test"></div>
   <?php the_content(); ?>
 </main>
 <?php get_footer(); ?>
