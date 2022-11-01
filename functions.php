@@ -20,6 +20,8 @@ function vv_basic_enqueue_scripts() {
 
 add_action('wp_enqueue_scripts', 'vv_basic_enqueue_scripts');
 
+add_filter('wpcf7_autop_or_not', '__return_false');
+
 function vv_register_my_menu() {
   register_nav_menu('main-menu',__( 'Main Menu' ));
 }

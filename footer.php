@@ -1,6 +1,8 @@
   <section class="modal hide">
-    <button class="wp-block-button__link modal-close"></button>
-    <?php echo do_shortcode( '[contact-form-7 id="42" title="Kontaktný formulár 1"]' ); ?>
+    <div class="modal__inner">
+      <button class="modal-close"></button>
+      <?php echo do_shortcode( '[contact-form-7 id="42" title="Kontaktný formulár 1"]' ); ?>
+    </div>
   </section>
   <footer class="footer">
     <section class="footer__content">
