@@ -13,9 +13,27 @@
 	<meta name="theme-color" content="#000">
 	<link rel="icon" type="image/png" sizes="64x64" href="<?php echo get_template_directory_uri().'/favicon.png'; ?>">
 	<?php wp_head(); ?>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+
+		gtag('consent', 'default', {
+			'ad_storage': 'denied',
+		  'analytics_storage': 'denied'
+		});
+	</script>
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-PDS8RPQ');
+	</script>
 </head>
 <body>
-<svg viewBox="0 0 15 15">
+	<noscript>
+		<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PDS8RPQ" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+	</noscript>
+	<svg viewBox="0 0 15 15">
 		<defs>
 	    <clipPath id="icon-download">
 				<path d="M7.5 15C3.358 15 0 11.642 0 7.5C0 3.358 3.358 0 7.5 0C11.642 0 15 3.358 15 7.5C15 11.642 11.642 15 7.5 15ZM1.25 7.5C1.25 10.952 4.048 13.75 7.5 13.75C10.952 13.75 13.75 10.952 13.75 7.5C13.75 4.048 10.952 1.25 7.5 1.25C4.048 1.25 1.25 4.048 1.25 7.5ZM10.183 7.058L8.125 9.116V3.75H6.875V9.116L4.817 7.058L3.933 7.942L7.058 11.067L7.5 11.509L7.942 11.067L11.067 7.942L10.183 7.058Z"/>
@@ -36,6 +54,19 @@
 			</clipPath>
 	  </defs>
 	</svg>
+	<section class="consent">
+		<div class="consent__inner">
+			<div class="consent__text">
+				This website uses cookies. Please, click accept to help me make it better.
+			</div>
+			<button class="consent__button button button--primary consent__button--accept">
+				Accept
+			</button>
+			<button class="consent__button button wp-block-button__link consent__button--decline">
+				Decline
+			</button>
+		</div>
+	</section>
 	<header class="header">
 		<?php if (!is_front_page()) { ?>
 			<a href="<?php echo home_url(); ?>" class="wp-block-button__link back"></a>
