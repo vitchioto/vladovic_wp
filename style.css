@@ -731,12 +731,22 @@ h2 {
 .consent__inner {
   align-items: center;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   margin: 0 auto;
   max-width: 1080px;
 }
 
 .consent__text {
-  margin-right: auto;
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+@media only screen and (min-width: 576px) {
+  .consent__text {
+    margin: 0 auto 0 0;
+    width: auto;
+  }
 }
 
 .consent__button {
