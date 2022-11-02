@@ -59,7 +59,7 @@ function vv_latest_projects_shortcode($atts) {
         $result .= "</div>";
       }
       $result .= "</div>";
-      $result .= "<img src='".get_the_post_thumbnail_url($post->ID)."' height='150' width='150'>";
+      $result .= "<img src='".get_the_post_thumbnail_url($post->ID)."' alt='Thumbnail of project: ".get_the_title($post->ID)."' height='150' width='150'>";
       $result .= "</a>";
 		endforeach;
 		$result .= "</div>";
