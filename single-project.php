@@ -3,6 +3,12 @@
   $tags = array_reverse($tags);
   $year = get_field("year");
   $url = get_field("url");
+  $currentPostId = get_the_ID();
+  $nextPostIndex = 0;
+  $posts = get_posts(array('numberposts' => -1, 'orderby' => 'menu_order', 'post_type' => 'project'));
+  for ($i = 0; $i < count($posts) - 1; $i++) {
+    if ($posts[$i]->ID == $currentPostId) $nextPostIndex = $i + 1;
+  }
 ?>
 
 <?php get_header(); ?>
@@ -28,6 +34,16 @@
       <div class='project-column__item'><?php echo $year;?></div>
     </div>
   </section>
-  <?php the_content(); ?>
+  <div class="project-content">
+    <?php the_content(); ?>
+  </div>
+  <div class="button__section">
+    <a
+      class="button wp-block-button__link"
+      href="<?php echo get_permalink($posts[$nextPostIndex]->ID); ?>"
+    >
+	  	Next Project
+    </a>
+  </div>
 </main>
 <?php get_footer(); ?>

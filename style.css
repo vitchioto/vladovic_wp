@@ -487,6 +487,7 @@ h2 {
     font-weight: 700;
     line-height: 16px;
     padding: 12px 24px;
+    text-decoration: none;
     transition: background .3s, color .3s;
 }
 
@@ -515,6 +516,11 @@ h2 {
 
 .button--primary:active {
     background: #29448b;
+}
+
+.button__section {
+  display: flex;
+  justify-content: center;
 }
 
 .wp-block-buttons .resume {
@@ -826,4 +832,8 @@ h2 {
 
 .project-column:last-child {
   text-align: right;
+}
+
+.project-content {
+  margin-bottom: 32px;
 }
