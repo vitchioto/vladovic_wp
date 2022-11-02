@@ -26,6 +26,18 @@
   });
 
   if (!localStorage['cookie_consent']) {
-      $( ".consent" ).fadeIn(200);
+      $(".consent").fadeIn(200);
   }
+
+  $(".icon-copy").click(async () => {
+    try {
+      await navigator.clipboard.writeText("vladovic.vladimir@gmail.com");
+      $(".copy-result").fadeIn(200);
+      setTimeout(() => {
+        $(".copy-result").fadeOut(200);
+      }, "1500")
+    } catch (err) {
+      console.error('Failed to copy: ', err);
+    }
+  });
 })(jQuery);

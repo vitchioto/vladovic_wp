@@ -450,10 +450,15 @@ h2 {
     display: flex;
 }
 
-.email::before {
-  clip-path: url(#icon-copy);
-  background: currentColor;
-  content: "";
+.copy-result {
+  color: #5cd168;
+  display: none;
+  margin-right: 5px;
+}
+
+.icon-copy {
+  cursor: pointer;
+  fill: #78b5ff;
   height: 15px;
   margin-right: 9px;
   width: 15px;
