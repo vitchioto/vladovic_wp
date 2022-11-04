@@ -564,12 +564,10 @@ h2 {
 }
 
 .modal {
-  align-items: center;
   backdrop-filter: blur(3px);
   background: rgba(255, 255, 255, .2);
-  display: flex;
+  display: none;
   height: 100%;
-  justify-content: center;
   left: 0;
   position: fixed;
   top: 0;
@@ -577,10 +575,32 @@ h2 {
 }
 
 .modal__inner {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+}
+
+.modal__content {
   background: #2b3036;
   border-radius: 4px;
+  max-width: 340px;
   padding: 24px 32px 32px;
   position: relative;
+  width: 100%;
+}
+
+.wpcf7-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact__header {
+  order: 1;
+}
+
+.contact__form {
+  order: 3;
 }
 
 .contact__headline {
@@ -593,8 +613,19 @@ h2 {
   margin-bottom: 24px;
 }
 
-.hide {
+/* it has ridiculous CSS Specificity set by plugin */
+.wpcf7 .wpcf7-form .wpcf7-response-output {
+  border: 0;
+  color: #fc0;
   display: none;
+  margin: 0 0 10px;
+  order: 1;
+  padding: 0;
+}
+
+.wpcf7 .wpcf7-form.sent .wpcf7-response-output {
+  color: #5cd168;
+  margin: 12px 0 0;
 }
 
 .contact__label {
