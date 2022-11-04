@@ -31,7 +31,7 @@
 
   $(".icon-copy").click(async () => {
     try {
-      await navigator.clipboard.writeText("vladovic.vladimir@gmail.com");
+      await navigator.clipboard.writeText("vladimir@vladovic.com");
       $(".copy-result").fadeIn(200);
       setTimeout(() => {
         $(".copy-result").fadeOut(200);
