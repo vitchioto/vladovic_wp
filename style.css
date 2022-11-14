@@ -450,18 +450,17 @@ h2 {
     display: flex;
 }
 
-.copy-result {
-  color: #5cd168;
-  display: none;
-  margin-right: 5px;
-}
-
 .icon-copy {
   cursor: pointer;
   fill: #78b5ff;
   height: 15px;
   margin-right: 9px;
+  transition: fill 1s;
   width: 15px;
+}
+
+.icon-copy--highlight {
+  fill: #5cd168;
 }
 
 @media only screen and (min-width: 576px) {

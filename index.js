@@ -63,9 +63,9 @@
   $('.icon-copy').click(async () => {
     try {
       await navigator.clipboard.writeText('vladimir@vladovic.com');
-      $('.copy-result').fadeIn(200);
+      $('.icon-copy').addClass('icon-copy--highlight');
       setTimeout(() => {
-        $('.copy-result').fadeOut(200);
+        $('.icon-copy').removeClass('icon-copy--highlight');
       }, '1500')
     } catch (err) {
       console.error('Failed to copy: ', err);
