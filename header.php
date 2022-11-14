@@ -62,7 +62,7 @@
 	</section>
 	<header class="header">
 		<?php if (!is_front_page()) { ?>
-			<a href="<?php echo home_url(); ?>" class="wp-block-button__link back"></a>
+			<!--a href="<?php echo home_url(); ?>" class="wp-block-button__link back"></a-->
 		<?php } ?>
 		<a href="<?php echo home_url(); ?>" class="logo">
 			VLADOVIC.SK
