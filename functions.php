@@ -46,9 +46,9 @@ function vv_latest_projects_shortcode($atts) {
 
 			$result .= "<a class='project' href='".get_the_permalink($post->ID)."'>";
       $result .= "<div class='project-info'>";
-      $result .= "<div class='project-title'>";
+      $result .= "<h3 class='project-title'>";
       $result .= get_the_title($post->ID);
-      $result .= "</div>";
+      $result .= "</h3>";
       if ( $tags ) {
         $result .= "<div class='project-tags'>";
         foreach ( $tags as $tag ) :
