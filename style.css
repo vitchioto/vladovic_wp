@@ -408,16 +408,17 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-size: 62px;
-  line-height: 62px;
-  margin: 17px 0;
+  font-size: 77px;
+  line-height: 80px;
+  margin: 16px 0 8px;
   text-align: center;
 }
 
 h2 {
-  font-size: 47px;
+  font-size: 48px;
   font-weight: 400;
   line-height: 50px;
+  margin: 0 0 24px;
   text-align: center;
 }
 
@@ -433,7 +434,7 @@ h3 {
   font-size: 23px;
   font-weight: 400;
   line-height: 32px;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
   text-align: center;
 }
 
