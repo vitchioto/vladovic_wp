@@ -38,6 +38,12 @@
     });
   });
 
+  $('.modal__inner').click((e) => {
+    if($(e.target).hasClass('modal__inner')) {
+      closeModal();
+    }
+  });
+
   /* Consent functionality */
 
   $('.consent__button--decline').click(() => {
