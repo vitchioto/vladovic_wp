@@ -608,6 +608,7 @@ h3 {
 .modal__content {
   background: #2b3036;
   border-radius: 4px;
+  box-sizing: border-box;
   max-width: 340px;
   padding: 24px 32px 32px;
   position: relative;
