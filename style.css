@@ -405,6 +405,7 @@ main {
 h1, h2, h3 {
   font-family: bebas_neue;
   color: #fff;
+  letter-spacing: 2px;
 }
 
 h1 {
